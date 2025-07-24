@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sm-backend-coding-challenge", "sm-backend-coding-challenge.csproj", "{1A9F3DD8-F6A1-4CA7-9232-34DF8F5B6526}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingChallenge", "CodingChallenge.csproj", "{1A9F3DD8-F6A1-4CA7-9232-34DF8F5B6526}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

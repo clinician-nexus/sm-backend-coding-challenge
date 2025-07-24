@@ -1,4 +1,4 @@
-# sm-backend-coding-challenge
+# Backend coding challenge
 
 - `make db-init` - starts and initializes database
 - `make app-start` - starts dotnet api in watch mode so it updates as your code changes
