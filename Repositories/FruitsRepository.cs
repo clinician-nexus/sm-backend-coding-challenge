@@ -1,7 +1,7 @@
 using Dapper;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Threading.Tasks;
 using CodingChallenge.Interfaces;
 using CodingChallenge.Models;
@@ -14,7 +14,7 @@ namespace CodingChallenge.Repositories
 
         public FruitsRepository(IConfiguration configuration)
         {
-            _connectionString = configuration.GetConnectionString("DefaultConnection");
+            _connectionString = configuration.GetConnectionString("DefaultConnection")!;
         }
 
         public async Task<IEnumerable<Fruit>> GetAllFruitsAsync()
