@@ -1,20 +1,8 @@
--- Run this command to start and initialize the database:
--- make db-init
--- Run this command to stop the database and reset its volume completely:
--- make db-reset
-IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = N'FruitsDB')
-BEGIN
-  CREATE DATABASE FruitsDB;
-END;
-GO
-
-USE FruitsDB;
-GO
-
-CREATE TABLE dbo.Fruits (
-      Id     INT IDENTITY   NOT NULL
-    , Name   NVARCHAR(50)   NOT NULL
-    , Color  NVARCHAR(50)       NULL
-    , CONSTRAINT PK_dbo_Fruits PRIMARY KEY (Id)
+-- SQLite schema for the pre-seeded FruitsDB.db committed to this repo.
+-- The database is already generated and checked in, so you normally don't
+-- need to run anything. To regenerate it from scratch: make db-init
+CREATE TABLE Fruits (
+      Id     INTEGER PRIMARY KEY AUTOINCREMENT
+    , Name   TEXT    NOT NULL
+    , Color  TEXT
 );
-GO

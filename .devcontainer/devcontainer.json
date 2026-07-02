@@ -1,14 +1,10 @@
 {
     "name": "sm-backend-coding-challenge",
-    "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
-    },
     "customizations": {
         "vscode": {
             "settings": {},
             "extensions": [
                 "ms-dotnettools.csharp",
-                "ms-mssql.mssql",
                 "streetsidesoftware.code-spell-checker"
             ]
         }
